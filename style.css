@@ -1,0 +1,109 @@
+/* RESET CSS*/
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  width: 100%;
+}
+
+
+
+
+/*********STYLISER LES H ********/
+h1{
+  font-size: 1.8em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+h2{
+  font-size: 1.5em;
+  
+  text-align: center;
+}
+h4{
+  font-size: 1.3em;
+  font-weight: 500;
+}
+h5{
+  font-size: 1.4em;
+  font-weight: 500;
+  max-height: 1.5em;
+}
+/************ HEADER ***********/
+header{
+  height: 20vh;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.imglogo{
+  display: flex;
+  
+}
+.titre{
+  display: flex;
+  align-items: center;
+}
+.navbar-toggler{
+  display: flex;
+  align-items: flex-end;
+}
+/*********** MAIN **************/
+
+
+/*********** FOOTER **************/
+
+
+
+/********MEDIA QUERY POUR ECRAN 320PX et XS ***********
+******min-width 320px**************/
+@media screen and (min-width: 320px){
+  h1{ 
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .logo{
+    
+  }
+ 
+
+
+
+/********MEDIA QUERY POUR ECRAN 540PX et SM ***********
+******min-width 540px**************/
+@media screen and (min-width: 540px){
+  h1{ 
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  
+  
+
+
+/********MEDIA QUERY POUR ECRAN 720PX et MD ***********
+******min-width 720px**************/
+@media screen and (min-width: 720px){
+  
+
+}
+
+
+
+
+/********MEDIA QUERY POUR ECRAN 960X et LG ***********
+******min-width 960px**************/
+@media screen and (min-width: 960px){
+
+
+
+/********MEDIA QUERY POUR ECRAN 1140PX et XS ***********
+******min-width 1140px**************/
+@media screen and (min-width: 1140px){
+
+
+
