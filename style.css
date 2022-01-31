@@ -1,3 +1,11 @@
+/*bg box #87cefa 
+
+
+  color h1 #1e90ff
+  
+  */
+
+
 /* RESET CSS*/
 *, ::before, ::after{
   box-sizing: border-box;
@@ -5,91 +13,154 @@
   padding: 0;
 }
 html, body{
-  width: 100%;
+  width: 100vw;
+  
 }
-
-
-
-
+/************** DEBUT STYLISER <HR> ***********/
+.separator{
+  height: 1px;
+  width: 50%;
+  border: none;
+  background: black;
+  margin: auto;
+}
+.separator-card{
+  height: 1px;
+  width: 30%;
+  border: none;
+  background: black;
+  margin: auto;
+}
+/************** FIN STYLISER <HR> ***********/
+p{
+  margin-top: 20px;
+}
 /*********STYLISER LES H ********/
-h1{
-  font-size: 1.8em;
-  line-height: 1.5em;
-  font-weight: bold;
-  color: black;
-}
 h2{
   font-size: 1.5em;
-  
   text-align: center;
 }
 h4{
   font-size: 1.3em;
   font-weight: 500;
+  margin-top: 20px;
 }
 h5{
   font-size: 1.4em;
   font-weight: 500;
   max-height: 1.5em;
+  text-align: center;
 }
+
 /************ HEADER ***********/
-header{
-  height: 20vh;
-  background-color: brown;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
+
+
+/*********** DEBUT MAIN **************/
+.box{
+  background: #87cefa;
+  margin-top: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-.imglogo{
-  display: flex;
+
+.article{
+  text-align: justify;
+}
+.bold, h2{
+  font-weight: bolder;
   
 }
-.titre{
-  display: flex;
-  align-items: center;
+.center{
+  text-align: center;
 }
-.navbar-toggler{
-  display: flex;
-  align-items: flex-end;
+.tel-mail{
+  color: black;
+  
 }
-/*********** MAIN **************/
+section p .tel-mail:hover{
+  text-decoration: none;
+  color: 		#000080;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
 
+/*********** FIN MAIN **************/
+
+/************DEBUT STYLISER LES CARD ****************/
+.card-img{
+  width: 150px;
+  height: 150px;
+ 
+ }
+ .card-title{
+ 
+ }
+ .card-text{
+   text-align: center;
+   margin-top: 30px;
+ }
+/************ FIN STYLISER LES CARD ****************/
 
 /*********** FOOTER **************/
-
+footer{
+  background-color: yellow;
+  
+  
+}
 
 
 /********MEDIA QUERY POUR ECRAN 320PX et XS ***********
 ******min-width 320px**************/
 @media screen and (min-width: 320px){
+  button{
+    position: absolute;
+    left: 80%;
+    top: 70%;
+      }
+ 
   h1{ 
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .logo{
+    font-size: 1em;
+    font-weight: 900;
+    color: #87cefa;
     
   }
- 
+  .logo{
+    margin-left: -5px;
+  }
+  
 
 
 
 /********MEDIA QUERY POUR ECRAN 540PX et SM ***********
 ******min-width 540px**************/
 @media screen and (min-width: 540px){
+ 
   h1{ 
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: bolder;
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 20px;
+
   }
-  
+  button{
+    margin-top: 20px;
+  }
   
 
 
 /********MEDIA QUERY POUR ECRAN 720PX et MD ***********
 ******min-width 720px**************/
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 1.8em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: #1e90ff;
+    
+  }
   
-
 }
 
 
@@ -97,13 +168,26 @@ header{
 
 /********MEDIA QUERY POUR ECRAN 960X et LG ***********
 ******min-width 960px**************/
-@media screen and (min-width: 960px){
+@media screen and (min-width: 992px){
+  .navigation{
+    margin: 20px;
+  }
+  h1{
+    margin: 40px;
+  }
+  .nav-item{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
 
 
 
-/********MEDIA QUERY POUR ECRAN 1140PX et XS ***********
+
+
+/********MEDIA QUERY POUR ECRAN 1140PX et XL ***********
 ******min-width 1140px**************/
 @media screen and (min-width: 1140px){
-
+}
 
 

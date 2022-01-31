@@ -18,17 +18,17 @@
 
 <!------------barre de navigation------------>
 
-  <header class="container-fluid ">
-    <nav class="navbar navbar-expand-md navbar-light">
-
-      <div class="imglogo">
-        <a href="index.html" class="navbar-brand" ><img src="img/logo.jpg"  class="logo img-fluid" width="150px" height="150px" title="Logo association" alt="image du logo de l association">
+  <header class="container-fluid  ">
+    
+    <nav class="navigation  navbar navbar-expand-lg navbar-light w-100">
+      <div class="imglogo ">
+        <a href="index.html" class="navbar-brand" ><img src="img/logo.jpg"  class="logo img-fluid"  title="Logo association" alt="image du logo de l association">
         </a>
-        <h1 class="titre">QUATRES PATTES</h1>
       </div>
-      <button type="button" class="navbar-toggler " data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggler Navigation ">
+        <h1 class="titre">QUATRES PATTES</h1>   
+      <button type="button" class="navbar-toggler navigation " data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggler Navigation ">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -38,8 +38,6 @@
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
-
-
       </nav>
   </header>
 
@@ -48,104 +46,122 @@
 
   <!------------CONTENU PRINCIPAL------------>
 
-  <main>
+  <main class="container">
 
   <!-- PRESENTATION DE L ASSOCIATION -->
-    <section>
+  
+    <section class="box rounded">
       <h2>Qui sommes-nous ?</h2>
-      <hr>
-      <p> Quatres Pattes, est une association à but non-lucratif de protection animale créée en 
-        2021. Nous n'avons pas de refuge mais nous confions les animaux issus de ces sauvetages 
-        à des familles d'accueil situés sur tout l'Hérault (34).<br/>
+      <hr class="separator">
+      <p> <strong class="bold">Quatres Pattes</strong>, est une association à but non-lucratif de protection animale créée en 
+      2021. Nous n'avons pas de refuge mais nous confions les animaux issus de ces sauvetages 
+      à des familles d'accueil situés sur tout l'Hérault (34).<br/>
       Notre mission est de venir en aide aux animaux (chiens et chats) errants et abandonnés mais 
       également aux propriétaires en difficulté en replaçant leurs animaux.<br/>
       Notre association sauve, soigne et trouve des nouvelles familles pour ces adorables boule de 
-      poils. Nous intervenons dans tout l'Hérault et nous travaillons en collaborations avec deux 
-      cliniques de Montpellier.<br/> 
+      poils.
+      <span class="bold"> Nous intervenons dans tout l'Hérault et nous travaillons en collaborations avec deux 
+      cliniques de Montpellier</span>.<br/> 
       Chaque année l' asoociation réalise 250 sauvetages en moyenne. Pour certains, ils ont la 
       chance d'avoir une seconde chance dans une nouvelle famille. Pour les chats trop sauvages, 
-      ils sont remis en liberté mais sous la protection de l'association. Nous n'abandonnons 
-      personne.<br/>
+      ils sont remis en liberté mais sous la protection de l'association.<span class="bold"> Nous n'abandonnons 
+      personne</span>.<br/>
       Tous ces sauvetages sont possible grâce aux dons de particuliers et les adoptions mais aussi grâce au travail de nos bénévoles.
       </p>
     </section>
 
     <!-- SERVICE -->
-    <section>
+    <section class="carte">
       <h2>Services</h2>
-      <hr>
-      <!--Ici je vous mettre titre service trois icones
-      1- chat stérilisation de chats 
-      2- coeur on prend en charge les animaux jusqu à adoption 
-      3- aide nous venon en aide aux sdf pour nourrir leurs chiens et recuperons animaux abandonné -->
-      <div>
-        <h5>Aide aux animaux abandonnés</h5>
-        <p>Nous prenons en charge les animaux errants ou abandonnés, chats et chiens.</p>
-      </div>
-      
-      <div>
-        <h5>Stérilisation de chats </h5>
-        <p>Nous stérilisons tout les chats issus de sauvetage.</p>
-      </div>
-      
-      <div>
-        <h5>Aide aux propriétaires en diffilculté</h5>
-        <p>Nous venons en aide aux sdf pour nourrir leurs chiens mais aussi nous replaçons les animaux des propriétaires qui ne peuvent s'en occuper ou souhaitant s'en séparer. </p>
+      <hr class="separator-card">
+      <div class="row">
+        
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card d-flex flex-column justify-content-center align-item-center my-4 mx-auto" style="width: 18rem;" >
+            <img src="img/chien-chat-ombre.jpg" class="img-fluid mx-auto card-img" alt="image chat-chien silhouette" title="Image chat-chien silhouette">
+            <div class="card-body">
+              <h5 class="card-title">Aide aux animaux abandonnés</h5>
+              <p class="card-text">Nous prenons en charge les animaux errants ou abandonnés, chats et chiens.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">  
+          <div class="card d-flex flex-column justify-content-center align-item-center my-4 mx-auto" style="width: 18rem;">
+            <img src="img/cat-silhouette2-s.jpg" class="img-fluid mx-auto card-img" alt="Image chat silhouette" title="Image chat silhouette">
+            <div class="card-body">
+              <h5 class="card-title">Stérilisation de chats </h5>
+              <p class="card-text">Nous stérilisons tout les chats issus de sauvetage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card d-flex flex-column justify-content-center align-item-center my-4 mx-auto" style="width: 18rem;">
+            
+            <img src="img/main-ombre.jpg" class="img-fluid mx-auto card-img help" alt="Image main help" title="Image main help" >
+            <div class="card-body">
+              <h5 class="card-title">Aide aux propriétaires en diffilculté</h5>
+              <p class="card-text">Nous venons en aide aux sdf pour nourrir leurs chiens mais aussi nous replaçons les animaux des propriétaires qui ne peuvent s'en occuper ou souhaitant s'en séparer. </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="box rounded ">
       <h2>Condition D'adoption</h2>
-      <hr>
-      <p>Tous nos animaux disponibles à l'adoption sont issus de nos sauvetages : victimes 
-        d'abandons, de maltraitance ou nés dans la nature. Chaque été, c'est plus d'une centaine 
-        d'animaux abandonnés par leurs maîtres que nous prenons sous notre aile pour les aider à 
-        trouver un nouveau lieu de vie. </p>
+      <hr class="separator">
+      <p class="center">Tous nos animaux disponibles à l'adoption sont issus de nos sauvetages, victimes 
+      d'abandons, de maltraitance ou nés dans la nature. Chaque été, c'est plus d'une centaine 
+      d'animaux abandonnés par leurs maîtres que nous prenons sous notre aile pour les aider à 
+      trouver un nouveau lieu de vie. </p>
       <p>Pour toutes adoptions ou renseignements supplémentaire, vous pouvez nous contacter par 
-        téléphone ou par mail.  Nos bénévoles sont à votre écoute pour vous guider et vous
-         accompagner dans votre choix. Nous prenons le temps de répondre à toutes vos questions. 
-         Une rencontre avec l’animal est indispensable ensuite vous confirmer votre désir 
-         d’adoption ou non.  Nous demandons des frais d’adoption, qui ne seront jamais supérieur 
-         à 150€ et varie en fonction de l’animal choisi, contacter nous.
+      <a class="tel-mail bold" href="tel:0600000000">téléphone</a>  ou par <a class="tel-mail bold"  href="mailto:email@example.com">mail</a>.  Nos bénévoles sont à votre écoute pour vous guider et vous
+      accompagner dans votre choix. Nous prenons le temps de répondre à toutes vos questions. 
+      <span class="bold"> Une rencontre avec l’animal est indispensable </span> ensuite vous confirmer votre désir 
+      d’adoption ou non.  Nous demandons <span class="bold"> des frais d’adoption</span>, qui ne seront jamais supérieur 
+      à <u>150€</u> et varie en fonction de l’animal choisi.<br/>
       Les frais d'adoption comprennent une participation à la stérilisation, l'identification, le 
       déparasitage, le vermifuge ainsi que tous les soins vétérinaires engagés pour le sauvetage 
-      (opérations, traitements spécifiques...). Ces frais sont fixes, en cas de grosse opération 
+      (opérations, traitements spécifiques...). <span class="bold"> Ces frais sont fixes</span>, en cas de grosse opération 
       le surplus est à la charge de l'association.  Dans le cas où les frais d'adoption remboursent
        les frais engendrés pour le chat, la somme restante sert automatiquement à aider à financer
         les soins urgents d'autres rescapés.
       </p>
     </section>
 
-
-    <section>
+    
+    <section class="box rounded ">
       <h2>Nos recommandations pour l'adoption</h2>
-      <hr>
-      <h4>
+      <hr class="separator">
+      <h4 class="center">
       Avant d’adopter un petit compagnon, prenez le temps de réfléchir et posez-vous quelques 
       questions :</h4>
       <p>
       Pourquoi voulez-vous un animal ? Etes-vous prêt à vous engager pour quelques années ? 
       Que ferez-vous de votre animal pendant les vacances ? Pouvez-vous assumer financièrement 
-      un animal ? Aurez-vous le temps de vous occuper ? Êtes-vous prêt à accepter que certains 
+      un animal ? Aurez-vous le temps de vous en occuper ? Êtes-vous prêt à accepter que certains 
       de vos biens puissent être abîmés ? Etes-vous prêt à faire des sacrifices pour 
       votre animal ?</p>
       <p>
-      Ces questions sont très importantes. L’animal que vous choisirez doit correspondre 
+     <span class="bold"> Ces questions sont très importantes</span>. L’animal que vous choisirez doit correspondre 
       à votre caractère, à vos envies, à votre mode de vie. Ne prenez pas un chien qui a 
       besoin de courir si vous n'aimez pas les longues balades dans la nature ou si vous 
       rêvez d'une peluche à câliner, oubliez l'idée d'un chien ou d'un chat, un animal 
-      n'est pas un jouet
+      n'est pas un jouet.
       </p>
     </section>
+ 
   </main>
 
   <!------------FIN DU CONTENU PRINCIPAL------------>
 
-
+<!--IL ME MANQUE A FAIRE DU RESPONSIVE DE MAIN? REVOIR RESPONSIVE DU BUTTON ET ATTAQUER LE FOOTER-->
 
   <!------------FOOTER------------>
 
-<footer>
+<footer class="container-fluid">
   <div class="bloc menu">
 
 
@@ -158,9 +174,14 @@
 
   <div class="bloc reseau">
     Facebook, instagram
-
+    <a href="https://www.facebook.com" target="-blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </svg> </a>
+    <a href="https://www.instagram.com" target="-blank"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </svg> </a>
   </div>
-  <hr>
+  <hr class="separator">
   <div class="copyright">
 
   </div>
@@ -168,13 +189,18 @@
 </footer>
 
 
+
+
+
+
+
+
+
+
+
+
+
   <!------------FIN DU FOOTER------------>
-
-
-
-
-
-
 <!-- Mis en place de ses liens au cas où -->
 <!-- JQuery-->
 <script src="jquery-3.6.0.min.js"></script>
@@ -182,6 +208,12 @@
 <script src="bootstrap.bundle.min.js"></script>
 <!-- My JavaScript -->
 <script src="script.js"></script>
+
+
+
+
+
+
 
 </body>
 </html>
