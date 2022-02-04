@@ -9,7 +9,7 @@ Description de l assocaiation:
 Association fictive de protection animale qui aurait pour but de venir en aide aux animaux errants ou abandonnés. Uniquement chats et chiens.
 
 Technologies utilisées:
-La réalisation de l'interface est pensé Mobile frist. J'ai utilisé le framework Bootstrap avec quelques médias queries.. J'ai utilisé bootstrap en local :
+La réalisation de l'interface est pensé Mobile frist. J'ai utilisé le framework Bootstrap avec quelques médias queries. J'ai utilisé bootstrap en local :
 
 <link href="bootstrap.min.css" rel="stylesheet">
   
@@ -44,3 +44,6 @@ Pour les images
   -https://www.hipdf.com/fr/redimensionner-image#google_vignette - redimensionner les images.
   -https://tinypng.com/  - compression d image
   -Utilisation des images libre de droit 
+
+Pour valider mon code:
+  J'ai utilisé htmllint ainsi que validator.w3.org pour le html et le css

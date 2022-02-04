@@ -1,21 +1,15 @@
-/*bg box #87cefa 
+/* bg box #87cefa -  color h1 #0275d8  */
 
-
-  color h1 #1e90ff
-  
-  */
-
-
-/* RESET CSS*/
-*, ::before, ::after{
+/* RESET CSS */
+*,  ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 html, body{
   width: 100vw;
-  
 }
+
 /************** DEBUT STYLISER <HR> ***********/
 .separator{
   height: 1px;
@@ -31,14 +25,22 @@ html, body{
   background: black;
   margin: auto;
 }
-/************** FIN STYLISER <HR> ***********/
+/**************  STYLISER <p> ***********/
+.p-contact{
+  font-size: 1.2em; 
+  font-weight: bolder;
+}
 p{
   margin-top: 20px;
 }
 /*********STYLISER LES H ********/
+h1 {
+  color:#87cefa;
+}
 h2{
   font-size: 1.5em;
   text-align: center;
+  font-weight: bolder;
 }
 h4{
   font-size: 1.3em;
@@ -51,50 +53,73 @@ h5{
   max-height: 1.5em;
   text-align: center;
 }
-
-/************ HEADER ***********/
-
+h6{
+  font-weight: bolder;
+}
 
 /*********** DEBUT MAIN **************/
 .box{
   background: #87cefa;
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 5px;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
-
+.box1{
+  border: black solid 1px;
+  padding: 10px;
+}
+.btn{
+  background-color:#87cefa ;
+  color: black;
+}
 .article{
   text-align: justify;
 }
-.bold, h2{
+/*********** STYLE ********/
+.bold{
   font-weight: bolder;
   
 }
 .center{
   text-align: center;
 }
+.underline{
+  text-decoration: underline;
+}
+/*********** STYLISER LES LIENS ***********/
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn-contact{
+  border: solid 1px #0275d8 ;
+  padding: 10px;
+}
+a:hover,
+.fa:hover{
+  text-decoration: none;
+  color: #0275d8;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+footer .fa{
+  color:#0275d8 ;
+}
 .tel-mail{
   color: black;
-  
 }
-section p .tel-mail:hover{
-  text-decoration: none;
-  color: 		#000080;
-  font-weight: bolder;
-  font-size: 1.2em;
-}
+
 
 /*********** FIN MAIN **************/
 
 /************DEBUT STYLISER LES CARD ****************/
+.card{
+  height: 90%;
+  padding-top: 20px;
+}
 .card-img{
   width: 150px;
   height: 150px;
- 
- }
- .card-title{
- 
  }
  .card-text{
    text-align: center;
@@ -103,17 +128,15 @@ section p .tel-mail:hover{
 /************ FIN STYLISER LES CARD ****************/
 
 /*********** FOOTER **************/
-footer{
-  background-color: yellow;
-  
-  
+.copyright{
+  font-size: 0.8em;
 }
 
 
 /********MEDIA QUERY POUR ECRAN 320PX et XS ***********
 ******min-width 320px**************/
 @media screen and (min-width: 320px){
-  button{
+  header button{
     position: absolute;
     left: 80%;
     top: 70%;
@@ -122,13 +145,13 @@ footer{
   h1{ 
     font-size: 1em;
     font-weight: 900;
-    color: #87cefa;
+    color:#87cefa;
     
   }
   .logo{
     margin-left: -5px;
   }
-  
+}
 
 
 
@@ -137,57 +160,54 @@ footer{
 @media screen and (min-width: 540px){
  
   h1{ 
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: bolder;
     text-align: center;
-    color: #1e90ff;
     margin-bottom: 20px;
-
+    margin-right: 50px;
+    color:#87cefa;
   }
   button{
-    margin-top: 20px;
+    margin-top: 5px;
   }
-  
+}
 
 
-/********MEDIA QUERY POUR ECRAN 720PX et MD ***********
-******min-width 720px**************/
+/********MEDIA QUERY POUR ECRAN 768PX et MD ***********
+******min-width 768px**************/
 @media screen and (min-width: 768px){
   h1{
     font-size: 1.8em;
     line-height: 1.5em;
     font-weight: bold;
-    color: #1e90ff;
-    
+    color:#87cefa;
   }
-  
+  .navigation{
+    margin: 20px;
+  }
+  .nav-item{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  footer hr{
+     display: none;
+   }
 }
-
-
-
 
 /********MEDIA QUERY POUR ECRAN 960X et LG ***********
 ******min-width 960px**************/
 @media screen and (min-width: 992px){
-  .navigation{
-    margin: 20px;
-  }
   h1{
     margin: 40px;
-  }
-  .nav-item{
-    margin-left: 50px;
-    margin-right: 50px;
+    color:#87cefa;
   }
 }
-
-
-
-
 
 /********MEDIA QUERY POUR ECRAN 1140PX et XL ***********
 ******min-width 1140px**************/
 @media screen and (min-width: 1140px){
+  .nav-item{
+    margin-left: 50px;
+    margin-right: 50px;    
+  }
 }
-
-
