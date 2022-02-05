@@ -32,8 +32,6 @@ html, body{
 }
 p{
   margin-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 /*********STYLISER LES H ********/
 h1 {
@@ -154,10 +152,7 @@ footer .fa{
     margin-left: -5px;
   }
 }
-/****** FOOTER ********/
-footer{
-  margin-top: 50px;
-}
+
 
 
 /********MEDIA QUERY POUR ECRAN 540PX et SM ***********
