@@ -5,4 +5,4 @@ User-agent: *
 Dissallow: /
 Allow: /
 
-# Sitemap :
+# Sitemap : https://quatres-pattes-virginie-giacometti.netlify.app/sitemap.xml 
